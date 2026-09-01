@@ -1,0 +1,87 @@
+{
+  "type": "record",
+  "name": "CardPresentTransaction",
+  "namespace": "com.fraud.events",
+  "doc": "Card Present Fraud Transaction",
+  "fields": [
+    {
+      "name": "transactionId",
+      "type": "string"
+    },
+    {
+      "name": "cardHash",
+      "type": "string"
+    },
+    {
+      "name": "accountId",
+      "type": "string"
+    },
+    {
+      "name": "eventTime",
+      "type": "long"
+    },
+    {
+      "name": "amount",
+      "type": "double"
+    },
+    {
+      "name": "currency",
+      "type": "string"
+    },
+    {
+      "name": "merchantId",
+      "type": "string"
+    },
+    {
+      "name": "merchantName",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "merchantCity",
+      "type": "string"
+    },
+    {
+      "name": "merchantState",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "merchantCountry",
+      "type": "string"
+    },
+    {
+      "name": "merchantLat",
+      "type": "double"
+    },
+    {
+      "name": "merchantLon",
+      "type": "double"
+    },
+    {
+      "name": "mcc",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "terminalId",
+      "type": "string"
+    },
+    {
+      "name": "posEntryMode",
+      "type": "string"
+    },
+    {
+      "name": "cardPresent",
+      "type": "string"
+    },
+    {
+      "name": "authResult",
+      "type": "string"
+    },
+    {
+      "name": "channel",
+      "type": "string"
+    }
+  ]
+}

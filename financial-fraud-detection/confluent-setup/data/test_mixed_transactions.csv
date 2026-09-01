@@ -1,0 +1,11 @@
+transactionId,cardHash,accountId,eventTime,amount,currency,merchantId,merchantName,merchantCity,merchantState,merchantCountry,merchantLat,merchantLon,terminalId,posEntryMode,cardPresent,authResult,mcc,channel
+txn-001,CARD_ALICE_001,acct-alice-001,2026-04-25T10:00:00Z,45.50,USD,m-nyc-cafe-01,NYC Coffee Shop,New York,NY,US,40.7128,-74.0060,term-nyc-01,CHIP,true,APPROVED,5814,POS
+txn-002,CARD_ALICE_001,acct-alice-001,2026-04-25T10:30:00Z,12.75,USD,m-nyc-bakery-01,NYC Bakery,New York,NY,US,40.7589,-73.9851,term-nyc-02,CONTACTLESS,true,APPROVED,5462,POS
+txn-003,CARD_BOB_002,acct-bob-002,2026-04-25T11:00:00Z,89.99,USD,m-sf-store-01,SF Electronics,San Francisco,CA,US,37.7749,-122.4194,term-sf-01,CHIP,true,APPROVED,5732,POS
+txn-004,CARD_BOB_002,acct-bob-002,2026-04-25T11:45:00Z,156.00,USD,m-sf-restaurant-01,SF Restaurant,San Francisco,CA,US,37.7849,-122.4094,term-sf-02,CHIP,true,APPROVED,5812,POS
+txn-005,CARD_CHARLIE_003,acct-charlie-003,2026-04-25T12:00:00Z,234.50,USD,m-chicago-shop-01,Chicago Shop,Chicago,IL,US,41.8781,-87.6298,term-chi-01,SWIPE,true,APPROVED,5311,POS
+txn-006,CARD_CHARLIE_003,acct-charlie-003,2026-04-25T12:20:00Z,67.25,USD,m-chicago-gas-01,Chicago Gas Station,Chicago,IL,US,41.8881,-87.6198,term-chi-02,CHIP,true,APPROVED,5541,POS
+txn-007,CARD_DAVID_004,acct-david-004,2026-04-25T13:00:00Z,450.00,USD,m-miami-hotel-01,Miami Hotel,Miami,FL,US,25.7617,-80.1918,term-miami-01,CHIP,true,APPROVED,7011,POS
+txn-008,CARD_DAVID_004,acct-david-004,2026-04-25T13:10:00Z,8950.00,USD,m-tokyo-luxury-01,Tokyo Luxury Store,Tokyo,,JP,35.6762,139.6503,term-tokyo-01,CONTACTLESS,true,APPROVED,5094,POS
+txn-009,CARD_EVE_005,acct-eve-005,2026-04-25T14:00:00Z,78.90,USD,m-seattle-market-01,Seattle Market,Seattle,WA,US,47.6062,-122.3321,term-sea-01,CHIP,true,APPROVED,5411,POS
+txn-010,CARD_EVE_005,acct-eve-005,2026-04-25T14:05:00Z,1234.50,USD,m-sydney-electronics-01,Sydney Electronics,Sydney,,AU,-33.8688,151.2093,term-syd-01,CONTACTLESS,true,APPROVED,5732,POS

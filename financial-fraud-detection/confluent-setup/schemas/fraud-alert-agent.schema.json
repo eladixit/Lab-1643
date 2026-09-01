@@ -1,0 +1,269 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FraudAlertAgentResponse",
+  "description": "Fraud alert payload enriched for watsonx Orchestrate agent response with transaction details, confidence assessment, and suggested action",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "cardHash",
+    "alertMessage",
+    "firstTransaction",
+    "secondTransaction",
+    "travelAnalysis",
+    "agentDecision"
+  ],
+  "properties": {
+    "cardHash": {
+      "type": "string",
+      "description": "Card identifier involved in the fraud alert"
+    },
+    "accountId": {
+      "type": "string",
+      "description": "Account identifier associated with the card when available"
+    },
+    "alertMessage": {
+      "type": "string",
+      "description": "Human-readable fraud alert message"
+    },
+    "detectedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the fraud alert was detected"
+    },
+    "firstTransaction": {
+      "type": "object",
+      "description": "Earlier transaction used in the impossible-travel comparison",
+      "additionalProperties": false,
+      "required": [
+        "transactionId",
+        "eventTime",
+        "amount",
+        "merchantName",
+        "merchantCity",
+        "merchantCountry"
+      ],
+      "properties": {
+        "transactionId": {
+          "type": "string",
+          "description": "Unique transaction identifier"
+        },
+        "eventTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Transaction timestamp in ISO 8601 format"
+        },
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Transaction amount"
+        },
+        "currency": {
+          "type": "string",
+          "description": "ISO 4217 currency code"
+        },
+        "merchantName": {
+          "type": "string",
+          "description": "Merchant name"
+        },
+        "merchantCity": {
+          "type": "string",
+          "description": "Merchant city"
+        },
+        "merchantState": {
+          "type": "string",
+          "description": "Merchant state or region when available"
+        },
+        "merchantCountry": {
+          "type": "string",
+          "description": "Merchant country code"
+        },
+        "mcc": {
+          "type": "string",
+          "description": "Merchant category code"
+        }
+      }
+    },
+    "secondTransaction": {
+      "type": "object",
+      "description": "Later transaction used in the impossible-travel comparison",
+      "additionalProperties": false,
+      "required": [
+        "transactionId",
+        "eventTime",
+        "amount",
+        "merchantName",
+        "merchantCity",
+        "merchantCountry"
+      ],
+      "properties": {
+        "transactionId": {
+          "type": "string",
+          "description": "Unique transaction identifier"
+        },
+        "eventTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Transaction timestamp in ISO 8601 format"
+        },
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Transaction amount"
+        },
+        "currency": {
+          "type": "string",
+          "description": "ISO 4217 currency code"
+        },
+        "merchantName": {
+          "type": "string",
+          "description": "Merchant name"
+        },
+        "merchantCity": {
+          "type": "string",
+          "description": "Merchant city"
+        },
+        "merchantState": {
+          "type": "string",
+          "description": "Merchant state or region when available"
+        },
+        "merchantCountry": {
+          "type": "string",
+          "description": "Merchant country code"
+        },
+        "mcc": {
+          "type": "string",
+          "description": "Merchant category code"
+        }
+      }
+    },
+    "travelAnalysis": {
+      "type": "object",
+      "description": "Impossible-travel analytics derived from the paired transactions",
+      "additionalProperties": false,
+      "required": [
+        "firstLocation",
+        "secondLocation",
+        "distanceKm",
+        "timeMinutes",
+        "speedKmh"
+      ],
+      "properties": {
+        "firstLocation": {
+          "type": "string",
+          "description": "First transaction location formatted as City, Country"
+        },
+        "secondLocation": {
+          "type": "string",
+          "description": "Second transaction location formatted as City, Country"
+        },
+        "distanceKm": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Distance between the two transaction locations in kilometers"
+        },
+        "timeMinutes": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Elapsed time between the two transactions in minutes"
+        },
+        "speedKmh": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Required travel speed between the two transactions in kilometers per hour"
+        }
+      }
+    },
+    "customerHistorySummary": {
+      "type": "object",
+      "description": "Compact customer baseline used by the agent for confidence reasoning",
+      "additionalProperties": false,
+      "properties": {
+        "baselineRegion": {
+          "type": "string",
+          "description": "Typical city or region observed in recent history"
+        },
+        "usualCountries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Countries commonly seen in recent customer history"
+        },
+        "typicalMinAmount": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Lower bound of typical recent transaction amounts"
+        },
+        "typicalMaxAmount": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Upper bound of typical recent transaction amounts"
+        },
+        "typicalMerchants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Common merchants seen in recent history"
+        },
+        "historyNote": {
+          "type": "string",
+          "description": "Short explanation of the customer's normal behavior"
+        }
+      }
+    },
+    "agentDecision": {
+      "type": "object",
+      "description": "Agent response with confidence decision and suggested action",
+      "additionalProperties": false,
+      "required": [
+        "confidenceLevel",
+        "reasoning",
+        "suggestedAction"
+      ],
+      "properties": {
+        "confidenceLevel": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "description": "Fraud confidence level determined by the agent"
+        },
+        "confidenceScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Optional explainable confidence score from 0 to 100"
+        },
+        "reasoning": {
+          "type": "array",
+          "description": "Short reasons supporting the confidence decision",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "suggestedAction": {
+          "type": "string",
+          "enum": [
+            "monitor",
+            "review",
+            "create_case",
+            "escalate"
+          ],
+          "description": "Next best action suggested by the agent"
+        },
+        "actionRationale": {
+          "type": "string",
+          "description": "Why the suggested action was chosen"
+        },
+        "analystSummary": {
+          "type": "string",
+          "description": "Concise summary for a fraud analyst or demo output"
+        }
+      }
+    }
+  }
+}

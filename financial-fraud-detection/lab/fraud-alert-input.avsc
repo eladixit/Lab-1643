@@ -1,0 +1,61 @@
+{
+  "type": "record",
+  "name": "FraudAlertInput",
+  "namespace": "com.fraud.events",
+  "doc": "Simplified fraud alert for agent consumption",
+  "fields": [
+    {
+      "name": "cardHash",
+      "type": "string",
+      "doc": "Card identifier involved in fraud"
+    },
+    {
+      "name": "alertMessage",
+      "type": "string",
+      "doc": "Human-readable fraud alert message"
+    },
+    {
+      "name": "firstLocation",
+      "type": "string",
+      "doc": "First transaction location (City, Country)"
+    },
+    {
+      "name": "secondLocation",
+      "type": "string",
+      "doc": "Second transaction location (City, Country)"
+    },
+    {
+      "name": "distanceKm",
+      "type": "double",
+      "doc": "Distance between locations in kilometers"
+    },
+    {
+      "name": "timeMinutes",
+      "type": "double",
+      "doc": "Time between transactions in minutes"
+    },
+    {
+      "name": "speedKmh",
+      "type": "double",
+      "doc": "Required travel speed in km/h"
+    },
+    {
+      "name": "detectedAt",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "When fraud was detected (ISO 8601 timestamp)"
+    },
+    {
+      "name": "firstTransactionId",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "First transaction ID for reference"
+    },
+    {
+      "name": "secondTransactionId",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Second transaction ID for reference"
+    }
+  ]
+}
