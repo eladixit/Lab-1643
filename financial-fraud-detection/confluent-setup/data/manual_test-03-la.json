@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m003",
+  "cardHash": "CARD_MANUAL_TEST_v3",
+  "accountId": "acct-manual-001",
+  "eventTime": 1788562176065,
+  "amount": 87.50,
+  "currency": "USD",
+  "merchantId": "m-la-diner-01",
+  "merchantName": "LA Sunset Diner",
+  "merchantCity": "Los Angeles",
+  "merchantState": "CA",
+  "merchantCountry": "US",
+  "merchantLat": 34.0522,
+  "merchantLon": -118.2437,
+  "mcc": "5812",
+  "terminalId": "term-la-01",
+  "posEntryMode": "CHIP",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}

@@ -6,14 +6,19 @@
         "ibm-watsonx-orchestrate-mcp-server"
       ],
       "env": {
-        "WXO_MCP_WORKING_DIRECTORY": "",
+        "WXO_MCP_WORKING_DIRECTORY": "/Users/eladixit/Lab-1643/financial-fraud-detection",
         "WXO_MCP_DEBUG": ""
       },
-      "timeout": 300
+      "timeout": 120000
     },
     "watsonx-orchestrate-adk-docs": {
       "type": "streamable-http",
-      "url": "https://developer.watson-orchestrate.ibm.com/mcp"
+      "url": "https://developer.watson-orchestrate.ibm.com/mcp",
+      "alwaysAllow": [
+        "get_page_ibm_watsonx_orchestrate_adk",
+        "query_docs_filesystem_ibm_watsonx_orchestrate_adk",
+        "search_ibm_watsonx_orchestrate_adk"
+      ]
     }
   }
 }

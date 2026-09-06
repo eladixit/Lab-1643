@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m004",
+  "cardHash": "CARD_MANUAL_TEST_v3",
+  "accountId": "acct-manual-001",
+  "eventTime": 1788562776065,
+  "amount": 12500.00,
+  "currency": "JPY",
+  "merchantId": "m-tky-luxury-01",
+  "merchantName": "Tokyo Luxury Store",
+  "merchantCity": "Tokyo",
+  "merchantState": "",
+  "merchantCountry": "JP",
+  "merchantLat": 35.6762,
+  "merchantLon": 139.6503,
+  "mcc": "5094",
+  "terminalId": "term-tky-01",
+  "posEntryMode": "CONTACTLESS",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}

@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m001",
+  "cardHash": "CARD_MANUAL_TEST_v3",
+  "accountId": "acct-manual-001",
+  "eventTime": 1788560976065,
+  "amount": 125.00,
+  "currency": "USD",
+  "merchantId": "m-nyc-shop-01",
+  "merchantName": "NYC Electronics",
+  "merchantCity": "New York",
+  "merchantState": "NY",
+  "merchantCountry": "US",
+  "merchantLat": 40.7128,
+  "merchantLon": -74.0060,
+  "mcc": "5732",
+  "terminalId": "term-nyc-01",
+  "posEntryMode": "CHIP",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}

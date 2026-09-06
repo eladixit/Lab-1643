@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m002",
+  "cardHash": "CARD_MANUAL_TEST_v3",
+  "accountId": "acct-manual-001",
+  "eventTime": 1788561576065,
+  "amount": 340.00,
+  "currency": "GBP",
+  "merchantId": "m-lon-shop-01",
+  "merchantName": "London Fashion Boutique",
+  "merchantCity": "London",
+  "merchantState": "",
+  "merchantCountry": "GB",
+  "merchantLat": 51.5074,
+  "merchantLon": -0.1278,
+  "mcc": "5621",
+  "terminalId": "term-lon-01",
+  "posEntryMode": "CONTACTLESS",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}
