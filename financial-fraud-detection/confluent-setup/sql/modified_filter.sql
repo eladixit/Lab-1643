@@ -1,4 +1,4 @@
-INSERT INTO `bank.fraud.transactions.ede.2`
+INSERT INTO `bank.fraud.transactions.yourname.2``
 SELECT
   CAST(a.cardHash AS BYTES) AS `$key`,
   a.cardHash,
