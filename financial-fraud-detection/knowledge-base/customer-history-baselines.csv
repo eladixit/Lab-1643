@@ -1,0 +1,4 @@
+cardHash,accountId,baselineRegion,usualCountries,typicalMinAmount,typicalMaxAmount,typicalMerchants,confidenceNote
+CARD_ALICE_001,acct-alice-001,"New York","US",12.75,45.50,"NYC Coffee Shop; NYC Bakery","Local small purchases; similar New York activity should lower fraud confidence"
+CARD_DAVID_004,acct-david-004,"Miami","US",450.00,450.00,"Miami Hotel","Miami baseline only; sudden Tokyo activity should strongly raise fraud confidence"
+CARD_EVE_005,acct-eve-005,"Seattle","US",78.90,78.90,"Seattle Market","Seattle baseline only; sudden Sydney electronics activity should strongly raise fraud confidence"
