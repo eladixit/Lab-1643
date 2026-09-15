@@ -1,4 +1,4 @@
-INSERT INTO `bank.fraud.transactions.ede.2`
+INSERT INTO `bank.fraud.<YOURNAME>`
 SELECT
   CAST(a.cardHash AS BYTES) AS `$key`,
   a.cardHash,
@@ -34,7 +34,7 @@ SELECT
 FROM (
   SELECT transactionId, cardHash, authResult, channel, cardPresent,
          eventTime, merchantCity, merchantCountry, merchantLat, merchantLon
-  FROM `bank.transactions.2`
+  FROM `bank.transactions.<YOURNAME>`
   WHERE authResult = 'APPROVED'
     AND channel = 'POS'
     AND cardPresent = 'true'
@@ -42,7 +42,7 @@ FROM (
 JOIN (
   SELECT transactionId, cardHash, authResult, channel, cardPresent,
          eventTime, merchantCity, merchantCountry, merchantLat, merchantLon
-  FROM `bank.transactions.2`
+  FROM `bank.transactions.<YOURNAME>`
   WHERE authResult = 'APPROVED'
     AND channel = 'POS'
     AND cardPresent = 'true'
