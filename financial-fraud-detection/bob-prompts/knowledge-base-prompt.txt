@@ -7,7 +7,7 @@ These files give the agent the reference material it needs to:
 - explain why the alert looks suspicious
 - stay within the response boundaries defined for the demo
 
-Upload the following files from the directory "financial-fraud-detection/knowledge-base/fraud-alert-demo-knowledge/":
+Upload the following files from the directory "financial-fraud-detection/knowledge-base":
 - agent-guardrails.pdf
 - fraud-playbook.pdf
 - decision-rules.pdf
