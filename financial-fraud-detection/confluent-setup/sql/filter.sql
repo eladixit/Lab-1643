@@ -1,4 +1,4 @@
-INSERT INTO `bank.fraud.transactions.<FIRSTNAMELASTNAME>`
+INSERT INTO `bank.fraud.transactions`
 SELECT
   b.secondTransactionId AS transactionId,
   a.cardHash,
@@ -20,7 +20,7 @@ SELECT
 FROM (
   SELECT transactionId, cardHash, authResult, channel, cardPresent,
          eventTime, merchantCity, merchantCountry, merchantLat, merchantLon
-  FROM `bank.transactions.<FIRSTNAMELASTNAME>`
+  FROM `bank.transactions`
   WHERE authResult = 'APPROVED'
     AND channel = 'POS'
     AND cardPresent = 'true'
@@ -29,7 +29,7 @@ JOIN (
   SELECT cardHash, authResult, channel, cardPresent,
          eventTime, merchantCity, merchantCountry, merchantLat, merchantLon,
          transactionId AS secondTransactionId
-  FROM `bank.transactions.<FIRSTNAMELASTNAME>`
+  FROM `bank.transactions`
   WHERE authResult = 'APPROVED'
     AND channel = 'POS'
     AND cardPresent = 'true'
