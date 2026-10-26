@@ -6,7 +6,7 @@
         "ibm-watsonx-orchestrate-mcp-server"
       ],
       "env": {
-        "WXO_MCP_WORKING_DIRECTORY": "/Users/eladixit/Lab-1643/financial-fraud-detection",
+        "WXO_MCP_WORKING_DIRECTORY": "/Users/liampatty/Documents/techxchange/e2e-Oct23/Lab-1643/financial-fraud-detection",
         "WXO_MCP_DEBUG": ""
       },
       "timeout": 120000
@@ -18,6 +18,22 @@
         "get_page_ibm_watsonx_orchestrate_adk",
         "query_docs_filesystem_ibm_watsonx_orchestrate_adk",
         "search_ibm_watsonx_orchestrate_adk"
+      ]
+    },
+    "bob-marketplace": {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:49967/mcp",
+      "headers": {
+        "Bob-Marketplace-Token": "bob-marketplace-local"
+      },
+      "disabled": false,
+      "alwaysAllow": [
+        "search_assets",
+        "get_asset",
+        "list_installed",
+        "list_favorites",
+        "suggest_assets",
+        "list_updates"
       ]
     }
   }

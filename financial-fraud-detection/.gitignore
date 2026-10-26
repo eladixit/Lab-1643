@@ -12,3 +12,5 @@ wheels/
 .env
 *test.ipynb
 .DS_Store
+
+liam_filter_changelog.md

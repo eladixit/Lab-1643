@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m005",
+  "cardHash": "CARD_MANUAL_TEST_v4",
+  "accountId": "acct-manual-002",
+  "eventTime": 1788560976065,
+  "amount": 2200.00,
+  "currency": "AED",
+  "merchantId": "m-dxb-mall-01",
+  "merchantName": "Dubai Mall Jewellers",
+  "merchantCity": "Dubai",
+  "merchantState": "",
+  "merchantCountry": "AE",
+  "merchantLat": 25.1972,
+  "merchantLon": 55.2744,
+  "mcc": "5944",
+  "terminalId": "term-dxb-01",
+  "posEntryMode": "CHIP",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}

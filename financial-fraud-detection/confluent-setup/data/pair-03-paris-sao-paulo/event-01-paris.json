@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m007",
+  "cardHash": "CARD_MANUAL_TEST_v5",
+  "accountId": "acct-manual-003",
+  "eventTime": 1788560976065,
+  "amount": 680.00,
+  "currency": "EUR",
+  "merchantId": "m-par-boutique-01",
+  "merchantName": "Paris Champs Boutique",
+  "merchantCity": "Paris",
+  "merchantState": "",
+  "merchantCountry": "FR",
+  "merchantLat": 48.8566,
+  "merchantLon": 2.3522,
+  "mcc": "5621",
+  "terminalId": "term-par-01",
+  "posEntryMode": "CHIP",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}

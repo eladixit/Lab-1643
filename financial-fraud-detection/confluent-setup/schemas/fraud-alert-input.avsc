@@ -2,8 +2,13 @@
   "type": "record",
   "name": "FraudAlertInput",
   "namespace": "com.fraud.events",
-  "doc": "Simplified fraud alert for agent consumption",
+  "doc": "Simplified fraud alert for agent consumption (v2 — adds transactionId for WXO pipeline key field)",
   "fields": [
+    {
+      "name": "transactionId",
+      "type": "string",
+      "doc": "Transaction ID of the first (triggering) transaction — used as WXO pipeline key field"
+    },
     {
       "name": "cardHash",
       "type": "string",
