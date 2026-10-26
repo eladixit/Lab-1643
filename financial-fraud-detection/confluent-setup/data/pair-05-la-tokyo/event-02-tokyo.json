@@ -1,6 +1,6 @@
 {
   "transactionId": "txn-m004",
-  "cardHash": "CARD_MANUAL_TEST_v3",
+  "cardHash": "CARD_MANUAL_TEST_v7",
   "accountId": "acct-manual-001",
   "eventTime": 1788562776065,
   "amount": 12500.00,
