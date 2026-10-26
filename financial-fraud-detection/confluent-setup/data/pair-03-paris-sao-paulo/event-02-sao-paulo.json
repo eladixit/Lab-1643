@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m008",
+  "cardHash": "CARD_MANUAL_TEST_v5",
+  "accountId": "acct-manual-003",
+  "eventTime": 1788561576065,
+  "amount": 1350.00,
+  "currency": "BRL",
+  "merchantId": "m-gru-electronics-01",
+  "merchantName": "Sao Paulo Tech Store",
+  "merchantCity": "Sao Paulo",
+  "merchantState": "SP",
+  "merchantCountry": "BR",
+  "merchantLat": -23.5505,
+  "merchantLon": -46.6333,
+  "mcc": "5732",
+  "terminalId": "term-gru-01",
+  "posEntryMode": "CHIP",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}

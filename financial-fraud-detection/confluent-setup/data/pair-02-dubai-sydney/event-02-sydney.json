@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m006",
+  "cardHash": "CARD_MANUAL_TEST_v4",
+  "accountId": "acct-manual-002",
+  "eventTime": 1788561576065,
+  "amount": 450.00,
+  "currency": "AUD",
+  "merchantId": "m-syd-cafe-01",
+  "merchantName": "Sydney Harbour Cafe",
+  "merchantCity": "Sydney",
+  "merchantState": "NSW",
+  "merchantCountry": "AU",
+  "merchantLat": -33.8688,
+  "merchantLon": 151.2093,
+  "mcc": "5812",
+  "terminalId": "term-syd-01",
+  "posEntryMode": "CONTACTLESS",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}

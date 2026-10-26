@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m009",
+  "cardHash": "CARD_MANUAL_TEST_v6",
+  "accountId": "acct-manual-004",
+  "eventTime": 1788560976065,
+  "amount": 3200.00,
+  "currency": "SGD",
+  "merchantId": "m-sin-watch-01",
+  "merchantName": "Singapore Watch Gallery",
+  "merchantCity": "Singapore",
+  "merchantState": "",
+  "merchantCountry": "SG",
+  "merchantLat": 1.3521,
+  "merchantLon": 103.8198,
+  "mcc": "5944",
+  "terminalId": "term-sin-01",
+  "posEntryMode": "CHIP",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}

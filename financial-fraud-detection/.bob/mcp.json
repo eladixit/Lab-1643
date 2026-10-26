@@ -6,7 +6,7 @@
         "ibm-watsonx-orchestrate-mcp-server"
       ],
       "env": {
-        "WXO_MCP_WORKING_DIRECTORY": "/Users/eladixit/Lab-1643/financial-fraud-detection",
+        "WXO_MCP_WORKING_DIRECTORY": "/Users/liampatty/Documents/techxchange/e2e-Oct23/Lab-1643/financial-fraud-detection",
         "WXO_MCP_DEBUG": ""
       },
       "timeout": 120000

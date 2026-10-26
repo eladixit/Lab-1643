@@ -1,0 +1,21 @@
+{
+  "transactionId": "txn-m010",
+  "cardHash": "CARD_MANUAL_TEST_v6",
+  "accountId": "acct-manual-004",
+  "eventTime": 1788561576065,
+  "amount": 520.00,
+  "currency": "USD",
+  "merchantId": "m-ord-steakhouse-01",
+  "merchantName": "Chicago Steakhouse",
+  "merchantCity": "Chicago",
+  "merchantState": "IL",
+  "merchantCountry": "US",
+  "merchantLat": 41.8781,
+  "merchantLon": -87.6298,
+  "mcc": "5812",
+  "terminalId": "term-ord-01",
+  "posEntryMode": "CONTACTLESS",
+  "cardPresent": "true",
+  "authResult": "APPROVED",
+  "channel": "POS"
+}
